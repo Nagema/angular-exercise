@@ -1,0 +1,12 @@
+<ng-template [ngIf]="!movies">
+  <span *ngIf="!movies" class="loader"></span>
+</ng-template>
+
+<ng-template [ngIf]="movies">
+  <app-card
+    *ngFor="let movie of movies"
+    [movie]="movie"
+    (movieId)="getId($event)"
+  >
+  </app-card>
+</ng-template>
