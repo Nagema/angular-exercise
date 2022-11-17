@@ -3,10 +3,12 @@
 </ng-template>
 
 <ng-template [ngIf]="movies">
-  <app-card
-    *ngFor="let movie of movies"
-    [movie]="movie"
-    (movieId)="getId($event)"
-  >
-  </app-card>
+  <div class="movie-container">
+    <app-card
+      *ngFor="let movie of movies"
+      [movie]="movie"
+      (movieId)="getId($event)"
+    >
+    </app-card>
+  </div>
 </ng-template>

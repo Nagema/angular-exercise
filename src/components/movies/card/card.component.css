@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 300px;
 }
 .img-card{
     max-width: 200px;
